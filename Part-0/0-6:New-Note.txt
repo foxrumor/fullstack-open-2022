@@ -1,0 +1,5 @@
+#Page has already been loaded. 
+#User entered their note information into the field and clicked the "save" button.
+browser-->server: HTTP 201 POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa content: {"content":"teh final note time is among us","date":"2022-03-20T01:52:10.631Z"}
+server-->browser: Response confirming note creation.
+#The new note is displayed with no page reload.

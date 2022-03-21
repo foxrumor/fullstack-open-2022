@@ -1,0 +1,11 @@
+#PAGE LOAD REQUESTED
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: html
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: css
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: javascript
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: JSON file containing all notes as objects with "content" and "date"
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico

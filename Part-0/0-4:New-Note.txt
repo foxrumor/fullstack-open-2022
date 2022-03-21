@@ -1,0 +1,12 @@
+#After user enters text into the text box and presses send.
+browser-->server: HTTP 302 POST https://studies.cs.helsinki.fi/exampleapp/new_note Payload:note=nvm%2C+note+time+is+actually+now
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML Code
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: CSS Code
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: javascript code
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: json file containing all notes
+browser-->server: HTTP 200 GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
